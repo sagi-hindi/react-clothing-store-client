@@ -16,14 +16,14 @@ class DevelopmentConfig extends Config {
 
 class ProductionConfig extends Config {
     public isDevelopment = false;
-    public getUserCart = "https://clothing-store-sa.herokuapp.com/api/cart/find/";
-    public getAllProducts = "https://clothing-store-sa.herokuapp.com/api/products";
-    public getOneProduct = "https://clothing-store-sa.herokuapp.com/api/products/";
-    public createCart = "https://clothing-store-sa.herokuapp.com/api/cart/create/";
-    public deleteCartProduct = "https://clothing-store-sa.herokuapp.com/api/cart/delete/";
-    public ProductImageUrl = "https://clothing-store-sa.herokuapp.com/api/products/images/";
-    public registerUrl = "https://clothing-store-sa.herokuapp.com/api/auth/register/";
-    public login = "https://clothing-store-sa.herokuapp.com/api/auth/login/";
+    public getUserCart = "https://s-a-c-s-api.onrender.com/api/cart/find/";
+    public getAllProducts = "https://s-a-c-s-api.onrender.com/api/products";
+    public getOneProduct = "https://s-a-c-s-api.onrender.com/api/products/";
+    public createCart = "https://s-a-c-s-api.onrender.com/api/cart/create/";
+    public deleteCartProduct = "https://s-a-c-s-api.onrender.com/api/cart/delete/";
+    public ProductImageUrl = "https://s-a-c-s-api.onrender.com/api/products/images/";
+    public registerUrl = "https://s-a-c-s-api.onrender.com/api/auth/register/";
+    public login = "https://s-a-c-s-api.onrender.com/api/auth/login/";
 }
 
 const config = process.env.NODE_ENV === "development" ? new DevelopmentConfig() : new ProductionConfig() ;
